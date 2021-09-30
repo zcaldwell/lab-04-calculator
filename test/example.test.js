@@ -66,3 +66,11 @@ test('mod12,5', (expect) => {
     const actual = mod(input1, input2);
     expect.equal(actual, expected);
 });
+
+test('int12,5', (expect) => {
+    const input1 = 12;
+    const input2 = 5;
+    const expected = 2;
+    const actual = mod(input1, input2);
+    expect.equal(actual, expected);
+});
