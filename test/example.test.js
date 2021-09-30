@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { add_two, add, sub } from '../calculations.js';
+import { add_two, add, sub, times } from '../calculations.js';
 
 
 
@@ -40,4 +40,13 @@ test('sub4,3', (expect) => {
     expect.equal(actual, expected);
     console.log('sub');
 });  
+
+test('times3,5', (expect) => {
+    const input1 = 3;
+    const input2 = 5;
+    const expected = 15;
+    const actual = times(input1, input2);
+    expect.equal(actual, expected);
+    console.log('times');
+});
 
