@@ -1,4 +1,4 @@
-import { add, sub, times } from './calculations.js';
+import { add, sub, times, div } from './calculations.js';
 
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -35,4 +35,16 @@ timesButton.addEventListener('click', () => {
     const value2 = Number(timesInput2.value);
     const result = times(value1, value2);
     timesAnswer.textContent = result;
-})
+});
+
+const divInput1 = document.getElementById('div-input-1');
+const divInput2 = document.getElementById('div-input-2');
+const divButton = document.getElementById('divbutton');
+const divAnswer = document.getElementById('div-output');
+
+divButton.addEventListener('click', () => {
+    const value1 = Number(divInput1.value);
+    const value2 = Number(divInput2.value);
+    const result = div(value1, value2);
+    divAnswer.textContent = result;
+});
