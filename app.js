@@ -1,4 +1,4 @@
-import { add, sub, times, div, mod } from './calculations.js';
+import { add, sub, times, div, mod, int, pyth, expo } from './calculations.js';
 
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -59,4 +59,40 @@ modButton.addEventListener('click', () => {
     const value2 = Number(modInput2.value);
     const result = mod(value1, value2);
     modAnswer.textContent = result;
+});
+
+const intInput1 = document.getElementById('int-input-1');
+const intInput2 = document.getElementById('int-input-2');
+const intButton = document.getElementById('intbutton');
+const intAnswer = document.getElementById('int-output');
+
+intButton.addEventListener('click', () => {
+    const value1 = Number(intInput1.value);
+    const value2 = Number(intInput2.value);
+    const result = int(value1, value2);
+    intAnswer.textContent = result;
+});
+
+const pythInput1 = document.getElementById('pyth-input-1');
+const pythInput2 = document.getElementById('pyth-input-2');
+const pythButton = document.getElementById('pythbutton');
+const pythAnswer = document.getElementById('pyth-output');
+
+pythButton.addEventListener('click', () => {
+    const value1 = Number(pythInput1.value);
+    const value2 = Number(pythInput2.value);
+    const result = pyth(value1, value2);
+    pythAnswer.textContent = result;
+});
+
+const expoInput1 = document.getElementById('expo-input-1');
+const expoInput2 = document.getElementById('expo-input-2');
+const expoButton = document.getElementById('expobutton');
+const expoAnswer = document.getElementById('expo-output');
+
+expoButton.addEventListener('click', () => {
+    const value1 = Number(expoInput1.value);
+    const value2 = Number(expoInput2.value);
+    const result = expo(value1, value2);
+    expoAnswer.textContent = result;
 });

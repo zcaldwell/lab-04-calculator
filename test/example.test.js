@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { add_two, add, sub, times, div, mod } from '../calculations.js';
+import { add_two, add, sub, times, div, mod, pyth, expo } from '../calculations.js';
 
 
 
@@ -38,7 +38,6 @@ test('sub4,3', (expect) => {
     const expected = 1;
     const actual = sub(input1, input2);
     expect.equal(actual, expected);
-    console.log('sub');
 });  
 
 test('times3,5', (expect) => {
@@ -47,7 +46,6 @@ test('times3,5', (expect) => {
     const expected = 15;
     const actual = times(input1, input2);
     expect.equal(actual, expected);
-    console.log('times');
 });
 
 test('div6,3', (expect) => {
@@ -56,7 +54,6 @@ test('div6,3', (expect) => {
     const expected = 2;
     const actual = div(input1, input2);
     expect.equal(actual, expected);
-    console.log('div');
 })
 
 test('mod12,5', (expect) => {
@@ -74,3 +71,19 @@ test('int12,5', (expect) => {
     const actual = mod(input1, input2);
     expect.equal(actual, expected);
 });
+
+test('pyth4,3', (expect) => {
+    const input1 = 4;
+    const input2 = 3;
+    const expected = 5;
+    const actual = pyth(input1, input2);
+    expect.equal(actual, expected);
+});
+
+test('expo8,2', (expect) => {
+    const input1 = 8;
+    const input2 = 2;
+    const expected = 64;
+    const actual = expo(input1, input2);
+    expect.equal(actual, expected);
+})
