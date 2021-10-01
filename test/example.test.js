@@ -54,7 +54,7 @@ test('div', (expect) => {
     const expected = 2;
     const actual = div(input1, input2);
     expect.equal(actual, expected);
-})
+});
 
 test('mod', (expect) => {
     const input1 = 12;
@@ -86,4 +86,4 @@ test('expo', (expect) => {
     const expected = 64;
     const actual = expo(input1, input2);
     expect.equal(actual, expected);
-})
+});
