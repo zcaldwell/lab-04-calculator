@@ -32,7 +32,7 @@ test('add function', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('sub4,3', (expect) => {
+test('sub', (expect) => {
     const input1 = 4;
     const input2 = 3;
     const expected = 1;
@@ -40,7 +40,7 @@ test('sub4,3', (expect) => {
     expect.equal(actual, expected);
 });  
 
-test('times3,5', (expect) => {
+test('times', (expect) => {
     const input1 = 3;
     const input2 = 5;
     const expected = 15;
@@ -48,7 +48,7 @@ test('times3,5', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('div6,3', (expect) => {
+test('div', (expect) => {
     const input1 = 6;
     const input2 = 3;
     const expected = 2;
@@ -56,7 +56,7 @@ test('div6,3', (expect) => {
     expect.equal(actual, expected);
 })
 
-test('mod12,5', (expect) => {
+test('mod', (expect) => {
     const input1 = 12;
     const input2 = 5;
     const expected = 2;
@@ -64,7 +64,7 @@ test('mod12,5', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('int12,5', (expect) => {
+test('int', (expect) => {
     const input1 = 12;
     const input2 = 5;
     const expected = 2;
@@ -72,7 +72,7 @@ test('int12,5', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('pyth4,3', (expect) => {
+test('pyth', (expect) => {
     const input1 = 4;
     const input2 = 3;
     const expected = 5;
@@ -80,7 +80,7 @@ test('pyth4,3', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('expo8,2', (expect) => {
+test('expo', (expect) => {
     const input1 = 8;
     const input2 = 2;
     const expected = 64;
